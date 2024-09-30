@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Activity.Completed_Task_Activity">
+
+    <TextView
+        android:id="@+id/tvComleteViewtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Completed Task"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Complete_Task_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvComleteViewtask"
+        android:layout_margin="35dp"
+        android:background="@drawable/recycle_border" />
+
+    <TextView
+        android:id="@+id/tvNoTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvComleteViewtask"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="8dp"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:padding="30px"
+        android:text="No Tasks found!\nStart Saving Tasks"
+        android:visibility="gone" />
+
+</RelativeLayout>
